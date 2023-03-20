@@ -1,13 +1,10 @@
-#test
-
 import telebot
 import requests
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
+from config import TOKEN
 
-TOKEN = '6037834959:AAGyAKVEftK9yhE_iaQ9TM8_U694euvGuHA'
+
 URL_ALL_CHARACTERS = 'https://swapi.dev/api/people'
-URL_GIF_CAT = 'https://cataas.com/cat/gif'
-URL_DOG = 'https://dog.ceo/api/breeds/image/random'
 bot = telebot.TeleBot(TOKEN)
 keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
 keyboard.add(KeyboardButton('Characters'))
